@@ -6,6 +6,7 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
+<<<<<<< HEAD
     var crearGato = {
       nombre: nombre,
       edad: edad,
@@ -16,6 +17,18 @@ function crearGato(nombre, edad) {
     }
       return crearGato
   }
+=======
+   var crearGato = {
+      nombre: nombre,
+      edad: edad,
+      meow: function() {
+        return 'Meow!'
+      }
+
+   }
+   return crearGato
+}
+>>>>>>> e4df0b17619decd5826bac620a57d417da4ae9d5
 
 
 function agregarPropiedad(objeto, property) {
@@ -23,8 +36,13 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
+<<<<<<< HEAD
     objeto[property] = null;
     return objeto
+=======
+    objeto[property] = null
+    return objeto 
+>>>>>>> e4df0b17619decd5826bac620a57d417da4ae9d5
 }
 
 function invocarMetodo(objeto, metodo) {
@@ -32,31 +50,51 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
+<<<<<<< HEAD
     objeto[metodo]();
 
 }
+=======
+    objeto[metodo]()
+  }
+>>>>>>> e4df0b17619decd5826bac620a57d417da4ae9d5
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
+<<<<<<< HEAD
       var result = objetoMisterioso.numeroMisterioso * 5
     return result 
+=======
+    var prod = 0 
+     prod = objetoMisterioso.numeroMisterioso * 5
+     return prod 
+
+
+>>>>>>> e4df0b17619decd5826bac620a57d417da4ae9d5
 }
 
 function eliminarPropiedad(objeto, unaPropiedad) {
   // Elimina la propiedad de objeto cuyo nombre está pasado por el parametro unaPropiedad 
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
+<<<<<<< HEAD
   // Tu código:
     delete objeto[unaPropiedad];
     return objeto 
 
+=======
+  // Tu código:}
+  delete objeto[unaPropiedad]
+  return objeto 
+>>>>>>> e4df0b17619decd5826bac620a57d417da4ae9d5
 }
 
 function nuevoUsuario(nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
+<<<<<<< HEAD
   // Tu código: 
     var obj = {
       nombre: nombre,
@@ -64,6 +102,17 @@ function nuevoUsuario(nombre, email, password) {
       password: password
     }
     return obj;
+=======
+  // Tu código:
+    var usuario = {
+      nombre: nombre,
+      email: email,
+      password: password 
+
+    }
+    return usuario 
+
+>>>>>>> e4df0b17619decd5826bac620a57d417da4ae9d5
 }
 
 function tieneEmail(usuario) {
@@ -73,9 +122,15 @@ function tieneEmail(usuario) {
     if (usuario['email']) {
       return true
     } else {
+<<<<<<< HEAD
 
       return false 
     }
+=======
+      return false
+    }
+
+>>>>>>> e4df0b17619decd5826bac620a57d417da4ae9d5
 }
 
 
@@ -85,10 +140,17 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+<<<<<<< HEAD
     if (objeto[propiedad]){
       return true
     } else {
       return false 
+=======
+    if (objeto[propiedad]) {
+      return true
+    } else {
+      return false
+>>>>>>> e4df0b17619decd5826bac620a57d417da4ae9d5
     }
 
 }
@@ -98,18 +160,27 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
+<<<<<<< HEAD
     return usuario['password'] === password 
 
+=======
+    return usuario['password'] === password
+>>>>>>> e4df0b17619decd5826bac620a57d417da4ae9d5
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevaPassword"
   // Devuelve el objeto
   // Tu código:
+<<<<<<< HEAD
     usuario.password = nuevaPassword;
 
     return usuario 
 
+=======
+    usuario.password = nuevaPassword
+    return usuario 
+>>>>>>> e4df0b17619decd5826bac620a57d417da4ae9d5
 }
 
 function agregarAmigo(usuario, nuevoAmigo) {
@@ -118,9 +189,13 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Devuelve el objeto "usuario"
   // // Tu código:
     usuario.amigos.push(nuevoAmigo)
+<<<<<<< HEAD
 
     return usuario 
 
+=======
+    return usuario 
+>>>>>>> e4df0b17619decd5826bac620a57d417da4ae9d5
 }
 
 function pasarUsuarioAPremium(usuarios) {
@@ -129,12 +204,22 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+<<<<<<< HEAD
     for (let i = 0; i < usuarios.length; i++) {
       
         usuarios[i].esPremium = true 
     }
 
     return usuarios 
+=======
+    for (var i = 0; i < usuarios.length; i++) {
+      
+        usuarios[i]['esPremium'] = true // es lo mismo el dot notation y el bracket con '' dentro
+
+    }
+    return usuarios 
+
+>>>>>>> e4df0b17619decd5826bac620a57d417da4ae9d5
 }
 
 function sumarLikesDeUsuario(usuario) {
@@ -144,6 +229,7 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
+<<<<<<< HEAD
   var suma = 0;
 
   for(var i = 0; i < usuario.posts.length; i++) {
@@ -152,6 +238,17 @@ function sumarLikesDeUsuario(usuario) {
 
   return suma;
   } 
+=======
+
+    var suma = 0
+      for (var i = 0; i < usuario.posts.length; i++) {
+        
+        suma = suma + usuario.posts[i].likes 
+      }
+
+      return suma 
+}
+>>>>>>> e4df0b17619decd5826bac620a57d417da4ae9d5
 
 function agregarMetodoCalculoDescuento(producto) {
   // Agregar un método (función) al objeto "producto" llamado "calcularPrecioDescuento"
@@ -168,6 +265,13 @@ function agregarMetodoCalculoDescuento(producto) {
     }
 
     return producto
+
+    producto.calcularPrecioDescuento = function (){
+
+    return producto.precio - (producto.precio * producto.porcentajeDeDescuento) // puedo y deberia usar this en vez de producto
+  }
+
+  return producto
 
 }
 
