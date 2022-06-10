@@ -1,4 +1,9 @@
-
+    html{
+        
+        background-image: url(https://img.freepik.com/foto-gratis/vista-superior-rebanadas-pizza-salami_23-2148765311.jpg?t=st=1654813862~exp=1654814462~hmac=a0aa50ff3db7510d6a5a59611fda74eec86a537cb823cac265d2c51f71d891ec&w=740); 
+        background-size: cover; 
+        text-align: center;
+    }
     h1 {
         color: green;
         
