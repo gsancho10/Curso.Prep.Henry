@@ -1,0 +1,40 @@
+html{
+   
+    background-color: rgb(240, 240, 240);
+}
+
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+    }
+
+
+    #firstID{
+        background-color: rgb(17, 17, 66) ;
+        border: 1px solid black;
+        color: aliceblue;
+        display: flex;
+	    align-items: center;
+	    justify-content: space-between
+        
+       
+    }
+
+    
+        
+    #thirdID {
+        width: 900px;
+        border: 2px solid blue;
+
+}
+
+
+#fifthID {
+    width: 600px;
+    
+    border: 2px solid blue;
+}
+    h3{
+        text-decoration-line: underline;
+    }
+    
